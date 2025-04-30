@@ -4,13 +4,25 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <LangVersion>latest</LangVersion>
+        <Version>1.0.0</Version>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/dotnetleague/SimpleRsqlParse</RepositoryUrl>
-        <Authors>dotnetleague</Authors>
+        <Authors>Jeferson F Silva</Authors> 
         <Company>Dotnet League</Company>
         <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <PackageIcon>SimpleRsqlParse.svg</PackageIcon>
     </PropertyGroup>
+    
+    <ItemGroup>
+        <None Include="SimpleRsqlParse.svg" Pack="true" PackagePath="\"/>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
     <ItemGroup Condition="'$(MSBuildProjectExtension)' != '.dcproj'">
         <PackageReference Include="SonarAnalyzer.CSharp">
             <PrivateAssets>all</PrivateAssets>
